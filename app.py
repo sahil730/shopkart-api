@@ -1,3 +1,5 @@
+import json  # unused import: flake8 will flag F401
+import json  # unused import: flake8 will flag F401
 """ShopKart API: a tiny product catalogue service used through the DevOps course."""
 import os
 
