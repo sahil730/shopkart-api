@@ -45,9 +45,8 @@ flowchart LR
 | 2 | Application | Flask API (`/health`, `/products`, `/products/<id>`), 3 pytest unit tests, flake8 linting, pinned dependencies | Something real and testable to protect | `docs/screenshots/02-tests-local.png` |
 | 3 | CI workflow | `.github/workflows/ci.yml`: PR + push triggers, Python 3.11/3.12 matrix, pip cache, lint → test, JUnit report artifact, read-only token, concurrency, 10-min timeout | Fast, repeatable, least-privilege checks on every change | `docs/screenshots/03-pipeline-green.png` |
 | 4 | Enforcement | Ruleset `protect-main`: PR required, both test checks required, no force pushes, no deletion | A pipeline nobody is forced to pass is only a suggestion | `docs/screenshots/04-ruleset.png` |
-| 5 | Break tests | Direct push, lint failure and failing test, each run on purpose | Prove the gates work, not just that the pipeline runs | screenshots 05–07 |
+| 5 | Break tests | Direct push, lint failure and failing test, each run on purpose | Prove the gates work, not just that the pipeline runs |
 
----
 
 ## 4. How it works (pipeline walkthrough)
 
